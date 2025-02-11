@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         String[] opciones = {"Sumar", "Restar", "Multiplicar", "Dividir"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                this, android.R.layout.simple_spinner_item, opciones);
+                this, R.layout.spinner_item_opciones, opciones);
         binding.spinner.setAdapter(adapter);
         binding.spinner.setSelection(0); // Establece la primera opción como seleccionada por defecto
 
